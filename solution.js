@@ -14,6 +14,14 @@ class Solution {
         }
         return res
     }
+
+    minOperations(nums, k) {
+        let sum = 0
+        for(const num of nums) {
+            sum = sum + num
+        }
+        return sum % k
+    }
 }
 
 module.exports = Solution

@@ -22,6 +22,15 @@ class Solution {
         }
         return sum % k
     }
+
+    reverseDegree(s) {
+        let sum = 0
+        for(let i = 0; i < s.length; i++) {
+            const posValue = ('z'.charCodeAt(0) - s.charCodeAt(i)) + 1
+            sum = sum + ((i + 1) * posValue) 
+        }
+        return sum
+    }
 }
 
 module.exports = Solution

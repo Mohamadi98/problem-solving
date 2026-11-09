@@ -1,4 +1,5 @@
 const Solution = require('./solution')
 
 const solution = new Solution()
-console.log(solution.reverseDegree('zaza'))
+solution.addTwoPromises(Promise.resolve(2), Promise.resolve(5))
+    .then(console.log)

@@ -31,6 +31,12 @@ class Solution {
         }
         return sum
     }
+
+    async addTwoPromises(promise1, promise2) {
+        const [p1, p2] = await Promise.all([promise1, promise2])
+        return p1 + p2
+    }
+
 }
 
 module.exports = Solution
